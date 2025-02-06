@@ -1,0 +1,54 @@
+#inputContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-left: 2rem;
+    width: 50%;
+}
+
+#titleInput {
+    width: 10rem;
+    height: 2rem;
+    margin-bottom: 1rem;
+    border: 0.1rem solid black;
+    box-shadow: 5px 5px 5px lightgray;
+}
+
+#contentInput {
+    width: 15rem;
+    height: 15rem;
+    border: 0.1rem solid black;
+    box-shadow: 5px 5px 5px lightgray;;
+}
+
+#titleHeader {
+    display: flex;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    justify-content: center;
+    font-size: x-large;
+    margin-bottom: 4rem;
+}
+
+#postButton {
+    width: 15rem;
+    border-bottom: 0.1rem solid black;
+    border-left: 0.1rem solid black;
+    border-right: 0.1rem solid black;
+    border-top: none;
+    box-shadow: 5px 5px 5px lightgray;
+    background-color: blanchedalmond;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    
+}
+
+#postButton:hover {
+    background-color: coral;
+    box-shadow: 5px 5px 10px gray;
+    transform: scale(1.02);
+}
+
+#posts {
+    margin-left: 2rem;
+    border: 0.1rem solid black;
+}
