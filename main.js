@@ -46,7 +46,19 @@ function addPostToPage() {
 }
 
 function writeReply() {
-    let reply = document.createElement("input");
+    let postList = document.getElementById("posts");
+
+    let replyInput = document.createElement("input");
+    reply.classList.add("replyWindow");
+    postList.append(replyInput);
+
+    let replyPost = document.createElement("button")
+    
+
+    let replyContent = reply.value.trim();
+    let replyItem = document.createElement("p");
+    replyItem.textContent = replyContent;
+    postList.append(replyItem);
 
 
 }
