@@ -37,6 +37,16 @@ function addPostToPage() {
     postList.append(contentItem);
 
     let replyButton = document.createElement("button");
+    replyButton.classList.add("replyButton");
     replyButton.textContent = "Reply";
+    replyButton.addEventListener("click", () => {
+        writeReply();
+    })
     postList.appendChild(replyButton);
+}
+
+function writeReply() {
+    let reply = document.createElement("input");
+
+
 }

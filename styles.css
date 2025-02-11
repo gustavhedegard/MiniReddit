@@ -49,6 +49,8 @@
 }
 
 #posts {
+    margin-top: 2rem;
     margin-left: 2rem;
     border: 0.1rem solid black;
+    width: 15rem;
 }
