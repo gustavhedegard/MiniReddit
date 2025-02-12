@@ -1,0 +1,22 @@
+#posts {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    border: 0.1rem solid black;
+    width: 67%;
+    margin-right: 2rem;
+}
+
+#titleHeader {
+    display: flex;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    justify-content: center;
+    font-size: x-large;
+    margin-bottom: 4rem;
+}
+
+.replyButton {
+    width: 3rem;
+    height: 1.5rem;
+}

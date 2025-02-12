@@ -2,7 +2,9 @@
     <head>
         <title>MiniReddit</title>
         <script type="module" src="main.js"></script>
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/posts.css">
+        <link rel="stylesheet" href="css/inputPost.css">
     </head>
     <body>
         <header>
@@ -10,11 +12,16 @@
                 <div>MiniReddit</div>
             </div>
         </header>
-        <div id="inputContainer">
-            <input type="text" id="titleInput" placeholder="Title">
-            <input type="text" id="contentInput" placeholder="Enter post here">
-            <button id="postButton">Post</button>
-        </div>
-        <div id="posts"></div>
+        <main id="mainContainer">
+            <div id="inputContainer">
+                <label id="inputLabel">Create new post</label>
+                <input type="text" id="titleInput" placeholder="Title">
+                <input type="text" id="contentInput" placeholder="Enter post here">
+                <button id="postButton">Post</button>
+            </div>
+            <div id="posts">
+                <label id="postsLabel">Posts</label>
+            </div>
+    </main>
     </body>
 </html>

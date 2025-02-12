@@ -20,21 +20,23 @@ postButton.addEventListener("click", function(){
     addPostToPage();
 });
 
+let postContainer = document.getElementById("posts");
+
 function addPostToPage() {
     let postTitle = document.getElementById("titleInput");
     let postContent = document.getElementById("contentInput");
-    let postList = document.getElementById("posts");
+    //let postList = document.getElementById("posts");
 
     let title = postTitle.value.trim();
 
     let titleItem = document.createElement("h3");
     titleItem.textContent = title;
-    postList.appendChild(titleItem);
+    
 
     let content = postContent.value.trim();
     let contentItem = document.createElement("p");
     contentItem.textContent = content;
-    postList.append(contentItem);
+    
 
     let replyButton = document.createElement("button");
     replyButton.classList.add("replyButton");
@@ -42,23 +44,45 @@ function addPostToPage() {
     replyButton.addEventListener("click", () => {
         writeReply();
     })
-    postList.appendChild(replyButton);
+
+    postContainer.appendChild(titleItem);
+    postContainer.append(contentItem);
+    postContainer.appendChild(replyButton);
 }
 
 function writeReply() {
-    let postList = document.getElementById("posts");
 
     let replyInput = document.createElement("input");
-    reply.classList.add("replyWindow");
-    postList.append(replyInput);
+    replyInput.classList.add("replyWindow");
+    //replyInput.placeholder("Write a reply");
 
-    let replyPost = document.createElement("button")
-    
+    let submitReply = document.createElement("button");
+    submitReply.classList.add("replyButton");
+    submitReply.textContent = "Send";
+    submitReply.addEventListener("click", () => {
+
+        let replyText = replyInput.value.trim();
+        let replyItem = document.createElement("p");
+        replyItem.textContent = replyText;
+        replyItem.classList.add("replyItem");
+        postContainer.appendChild(replyItem);
+
+        replyInput.remove();
+        submitReply.remove();
+    })
+
+    postContainer.appendChild(replyInput);
+    postContainer.appendChild(submitReply);
+
+    /*let replyPost = document.createElement("button")
+
 
     let replyContent = reply.value.trim();
     let replyItem = document.createElement("p");
     replyItem.textContent = replyContent;
     postList.append(replyItem);
+    replyItem.appendChild(replyPost);
+    */
 
 
 }
