@@ -16,7 +16,7 @@
 */
 
 let postButton = document.getElementById("postButton");
-postButton.addEventListener("click", function(){
+postButton.addEventListener("click", () => {
     addPostToPage();
 });
 
@@ -54,7 +54,6 @@ function writeReply() {
 
     let replyInput = document.createElement("input");
     replyInput.classList.add("replyWindow");
-    //replyInput.placeholder("Write a reply");
 
     let submitReply = document.createElement("button");
     submitReply.classList.add("replyButton");
@@ -73,16 +72,5 @@ function writeReply() {
 
     postContainer.appendChild(replyInput);
     postContainer.appendChild(submitReply);
-
-    /*let replyPost = document.createElement("button")
-
-
-    let replyContent = reply.value.trim();
-    let replyItem = document.createElement("p");
-    replyItem.textContent = replyContent;
-    postList.append(replyItem);
-    replyItem.appendChild(replyPost);
-    */
-
 
 }

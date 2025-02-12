@@ -1,3 +1,7 @@
+body {
+    background-color: rgb(243, 200, 183);
+}
+
 #mainContainer {
     display: flex;
     flex-direction: row;

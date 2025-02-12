@@ -7,18 +7,20 @@
 }
 
 #titleInput {
+    background-color: floralwhite;
     width: 10rem;
     height: 2rem;
     margin-bottom: 1rem;
     border: 0.1rem solid black;
-    box-shadow: 5px 5px 5px lightgray;
+    box-shadow: 5px 5px 5px gray;
 }
 
 #contentInput {
+    background-color:floralwhite;
     width: 15rem;
     height: 15rem;
     border: 0.1rem solid black;
-    box-shadow: 5px 5px 5px lightgray;
+    box-shadow: 5px 5px 5px gray;
 }
 
 #postButton {
@@ -27,7 +29,7 @@
     border-left: 0.1rem solid black;
     border-right: 0.1rem solid black;
     border-top: none;
-    box-shadow: 5px 5px 5px lightgray;
+    box-shadow: 5px 5px 5px gray;
     background-color: blanchedalmond;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
