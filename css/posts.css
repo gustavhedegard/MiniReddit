@@ -20,4 +20,12 @@
     width: 3rem;
     height: 1.5rem;
     
+    
+}
+
+.post {
+    display: flex;
+    flex-direction: column;
+    width: 15rem;
+    border: 0.1rem dotted black;
 }

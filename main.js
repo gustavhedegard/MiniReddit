@@ -1,13 +1,13 @@
 /*
 
 - För att kunna posta inlägg:
-    - class post(title, content, comment)
-    - input window(title and content?)
-    - post button
+    - class post(title, content, comment) nej
+    - input window(title and content?) yes
+    - post button yes
 
 - För att kunna kommentera på en post:
-    - class comment(content,comment)?
-    - reply button på varje post och comment
+    - class comment(content,comment)? nej
+    - reply button på varje post och comment yes
 
 - Visa upp max 60 tecken på huvudsidan från varje post och comment.
 
@@ -20,12 +20,15 @@ postButton.addEventListener("click", () => {
     addPostToPage();
 });
 
-let postContainer = document.getElementById("posts");
+
 
 function addPostToPage() {
     let postTitle = document.getElementById("titleInput");
     let postContent = document.getElementById("contentInput");
-    //let postList = document.getElementById("posts");
+    let postList = document.getElementById("posts");
+
+    let postContainer = document.createElement("div");
+    postContainer.classList.add("post");
 
     let title = postTitle.value.trim();
 
@@ -42,18 +45,24 @@ function addPostToPage() {
     replyButton.classList.add("replyButton");
     replyButton.textContent = "Reply";
     replyButton.addEventListener("click", () => {
-        writeReply();
+        writeReply(postContainer);
     })
 
     postContainer.appendChild(titleItem);
-    postContainer.append(contentItem);
+    postContainer.appendChild(contentItem);
     postContainer.appendChild(replyButton);
+
+    postList.appendChild(postContainer);
+
+    postTitle.value = "";
+    postContent.value = "";
 }
 
-function writeReply() {
+function writeReply(postContainer) {
 
     let replyInput = document.createElement("input");
     replyInput.classList.add("replyWindow");
+    replyInput.placeholder = "Write a reply";
 
     let submitReply = document.createElement("button");
     submitReply.classList.add("replyButton");
