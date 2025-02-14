@@ -1,0 +1,21 @@
+.replyWindow {
+    position: absolute;
+    top: 8.3rem;
+    right: 2.5rem;
+    width: 15rem;
+    height: 10rem;
+    border: 0.1rem solid black;
+    box-shadow: 5px 5px 5px gray;
+}
+
+.sendButton {
+    position: absolute;
+    right: 2.7rem;
+    top: 16.95rem;
+}
+
+.replyButton {
+    width: 3rem;
+    height: 1.5rem;
+       
+}

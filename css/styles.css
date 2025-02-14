@@ -7,9 +7,3 @@ body {
     flex-direction: row;
 }
 
-.replyWindow {
-    width: 15rem;
-    height: 15rem;
-    border: 0.1rem solid black;
-    box-shadow: 5px 5px 5px lightgray;
-}
