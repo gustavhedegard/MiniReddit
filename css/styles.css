@@ -1,5 +1,13 @@
 body {
-    background-color: rgb(243, 200, 183);
+    background-color: rgb(108, 91, 91)
+}
+
+#titleHeader {
+    display: flex;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    justify-content: center;
+    font-size: x-large;
+    margin-bottom: 4rem;
 }
 
 #mainContainer {
