@@ -7,8 +7,6 @@
     margin-right: 2rem;
 }
 
-
-
 .post {
     display: flex;
     flex-direction: column;
@@ -23,9 +21,17 @@
 .replyButton {
     width: 4rem;
     height: 1.5rem;
-    border-radius: 15%;
+    background-color: rgb(1, 97, 1);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
     margin-left: auto;
-    background-color:  rgb(1, 97, 1);
+}
+
+.replyButton:hover {
+    background-color: rgb(5, 164, 5);
 }
 
 #postLabel {
@@ -35,6 +41,4 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin-bottom: 2rem;
     
-
-
 }

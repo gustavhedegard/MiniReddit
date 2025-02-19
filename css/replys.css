@@ -1,6 +1,11 @@
+/* .replyContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+
 .replyWindow {
-    position: absolute;
-    right: 45rem;
     width: 15rem;
     height: 10rem;
     border: 0.1rem solid black;
@@ -9,5 +14,39 @@
 
 .sendButton {
     background-color: rgb(1, 97, 1);
+} */
+
+.replyContainer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
 }
+
+.replyWindow {
+    width: 100%;
+    height: 100px;
+    padding: 8px;
+    resize: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.sendButton {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    background-color: rgb(1, 97, 1);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.sendButton:hover {
+    background-color: rgb(5, 164, 5);
+}
+
 

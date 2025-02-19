@@ -23,18 +23,20 @@
 
 #postButton {
     width: 15rem;
+    height: 3rem;
     border-bottom: 0.1rem solid black;
     border-left: 0.1rem solid black;
     border-right: 0.1rem solid black;
     border-top: none;
-    background-color: blanchedalmond;
+    background-color: rgb(1, 97, 1);
+    color: white;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
     
 }
 
 #postButton:hover {
-    background-color: rgb(199, 202, 199);
+    background-color: rgb(5, 164, 5);
     box-shadow: 5px 5px 10px gray;
     transform: scale(1.02);
 }

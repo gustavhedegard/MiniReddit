@@ -61,6 +61,9 @@ function addPostToPage() {
 
 function writeReply(postContainer) {
 
+    let replyContainer = document.createElement("div");
+    replyContainer.classList.add("replyContainer");
+
     let replyInput = document.createElement("textarea");
     replyInput.classList.add("replyWindow");
     replyInput.placeholder = "Write a reply";
@@ -76,11 +79,11 @@ function writeReply(postContainer) {
         replyItem.classList.add("replyItem");
         postContainer.appendChild(replyItem);
 
-        replyInput.remove();
-        submitReply.remove();
+        replyContainer.remove();
     })
 
-    postContainer.appendChild(replyInput);
-    postContainer.appendChild(submitReply);
+    replyContainer.appendChild(replyInput);
+    replyContainer.appendChild(submitReply);
+    postContainer.appendChild(replyContainer);
 
 }
