@@ -36,8 +36,9 @@ function addPostToPage() {
     titleItem.textContent = title;
     
 
-    let content = postContent.value.trim();
+    let content = postContent.value.substring(0, 57).trim();
     let contentItem = document.createElement("p");
+    contentItem.id = "content";
     contentItem.textContent = content;
     
 
@@ -60,7 +61,7 @@ function addPostToPage() {
 
 function writeReply(postContainer) {
 
-    let replyInput = document.createElement("input");
+    let replyInput = document.createElement("textarea");
     replyInput.classList.add("replyWindow");
     replyInput.placeholder = "Write a reply";
 

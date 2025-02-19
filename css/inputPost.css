@@ -7,20 +7,18 @@
 }
 
 #titleInput {
-    background-color: floralwhite;
+    background-color: rgb(199, 202, 199);
     width: 10rem;
     height: 2rem;
     margin-bottom: 1rem;
     border: 0.1rem solid black;
-    box-shadow: 5px 5px 5px gray;
 }
 
 #contentInput {
-    background-color:floralwhite;
+    background-color:rgb(199, 202, 199);
     width: 15rem;
     height: 15rem;
     border: 0.1rem solid black;
-    box-shadow: 5px 5px 5px gray;
 }
 
 #postButton {
@@ -29,7 +27,6 @@
     border-left: 0.1rem solid black;
     border-right: 0.1rem solid black;
     border-top: none;
-    box-shadow: 5px 5px 5px gray;
     background-color: blanchedalmond;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
@@ -37,7 +34,7 @@
 }
 
 #postButton:hover {
-    background-color: coral;
+    background-color: rgb(199, 202, 199);
     box-shadow: 5px 5px 10px gray;
     transform: scale(1.02);
 }
@@ -45,6 +42,6 @@
 #inputLabel {
     font-size: x-large;
     margin-bottom: 1rem;
-    color: black;
+    color:  rgb(1, 97, 1);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }

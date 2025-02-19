@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(108, 91, 91)
+    background-color: rgb(36, 36, 36)
 }
 
 #titleHeader {
@@ -8,6 +8,7 @@ body {
     justify-content: center;
     font-size: x-large;
     margin-bottom: 4rem;
+    color: rgb(1, 97, 1);
 }
 
 #mainContainer {

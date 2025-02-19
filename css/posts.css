@@ -12,8 +12,29 @@
 .post {
     display: flex;
     flex-direction: column;
-    background-color: whitesmoke;
+    background-color:  rgb(199, 202, 199);
     width: 15rem;
     border: 0.1rem solid black;
     padding-left: 0.3rem;
+    padding-right: 0.3rem;
+    overflow-wrap: break-word;
+}
+
+.replyButton {
+    width: 4rem;
+    height: 1.5rem;
+    border-radius: 15%;
+    margin-left: auto;
+    background-color:  rgb(1, 97, 1);
+}
+
+#postLabel {
+    font-size: x-large;
+    margin-bottom: 1rem;
+    color:  rgb(1, 97, 1);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: 2rem;
+    
+
+
 }
