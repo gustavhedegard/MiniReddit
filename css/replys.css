@@ -1,21 +1,3 @@
-/* .replyContainer {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-
-}
-
-.replyWindow {
-    width: 15rem;
-    height: 10rem;
-    border: 0.1rem solid black;
-    background-color: rgb(199, 202, 199);;
-}
-
-.sendButton {
-    background-color: rgb(1, 97, 1);
-} */
-
 .replyContainer {
     position: relative;
     display: flex;
@@ -29,16 +11,19 @@
     height: 100px;
     padding: 8px;
     resize: none;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    color: white;
+    background-color: rgb(24,24,24);
+    border: none;
+    border-top: 0.1rem solid rgba(249, 178, 0, 0.92);
+
 }
 
 .sendButton {
     position: absolute;
     bottom: 5px;
     right: 5px;
-    background-color: rgb(1, 97, 1);
-    color: white;
+    background-color: rgba(249, 178, 0, 0.92);
+    color: rgb(24,24,24);
     border: none;
     padding: 5px 10px;
     border-radius: 5px;
@@ -46,7 +31,7 @@
 }
 
 .sendButton:hover {
-    background-color: rgb(5, 164, 5);
+    background-color: rgba(249, 178, 0, 0.92);
 }
 
 
