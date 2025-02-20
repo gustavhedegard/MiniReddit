@@ -45,8 +45,10 @@ function addPostToPage() {
     let replyButton = document.createElement("button");
     replyButton.classList.add("replyButton");
     replyButton.textContent = "Reply";
+
     replyButton.addEventListener("click", () => {
         writeReply(postContainer);
+        replyButton.disabled = true;
     })
 
     postContainer.appendChild(titleItem);
@@ -61,6 +63,7 @@ function addPostToPage() {
 
 function writeReply(postContainer) {
 
+    let replyButton = postContainer.querySelector(".replyButton");
     let replyContainer = document.createElement("div");
     replyContainer.classList.add("replyContainer");
 
@@ -71,6 +74,7 @@ function writeReply(postContainer) {
     let submitReply = document.createElement("button");
     submitReply.classList.add("sendButton");
     submitReply.textContent = "Send";
+
     submitReply.addEventListener("click", () => {
 
         let replyText = replyInput.value.trim();
@@ -80,6 +84,7 @@ function writeReply(postContainer) {
         postContainer.appendChild(replyItem);
 
         replyContainer.remove();
+        replyButton.disabled = false;
     })
 
     replyContainer.appendChild(replyInput);
