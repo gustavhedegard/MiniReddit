@@ -9,7 +9,7 @@ export function writeReply(postContainer) {
     replyInput.placeholder = "Write a reply";
 
     let submitReply = document.createElement("button");
-    submitReply.classList.add("sendButton");
+    submitReply.classList.add("sendButton"); 
     submitReply.textContent = "Send";
 
     submitReply.addEventListener("click", () => {
