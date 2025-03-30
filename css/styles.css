@@ -4,11 +4,14 @@ body {
 
 #titleHeader {
     display: flex;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     justify-content: center;
-    font-size: x-large;
     margin-bottom: 4rem;
     color: rgba(249, 178, 0, 0.92);
+}
+
+#header-text {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: underline;
 }
 
 #mainContainer {
